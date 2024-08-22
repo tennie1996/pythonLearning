@@ -1,7 +1,13 @@
-sphinx:
-  configuration: source/conf.py
-
-
+version: "2"
+ 
+build:
+  os: "windows11"
+  tools:
+    python: "3.12.3"
+ 
 python:
-   install:
-   - requirements: requirements.txt
+  install:
+    - requirements: ./requirements.txt
+ 
+sphinx:
+  configuration: docs/source/conf.py
